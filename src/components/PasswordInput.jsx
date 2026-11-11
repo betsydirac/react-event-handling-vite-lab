@@ -1,9 +1,10 @@
-// Code PasswordInput Component Here
+//password field that logs typing.used in app with submit button.
+function PasswordInput() {
+  function handleChange() {
+    console.log("Entering password...");
+  }
 
-function PasswordInput (){
-    return(
-        <></>
-    )
+  return <input type="password" onChange={handleChange} />;
 }
 
 export default PasswordInput;

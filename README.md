@@ -16,6 +16,9 @@ You are working with a client to create a new password input within their websit
     └── SubmitButton
 ```
 ### Isolate/Develop Design per Component
+- **App:** displays PasswordInput and SubmitButton. Connected to both.
+- **PasswordInput:** password field. Connected to App, next to SubmitButton.
+- **SubmitButton:** "Submit Password" button. Connected to App, next to PasswordInput.
 
 ## Task 3: Develop the Code
 ### Create Components
@@ -47,11 +50,23 @@ You are working with a client to create a new password input within their websit
 - Add a `console.log` to print out “Mouse Exiting”
 
 ### Call Function in Respective Event
+- `onChange={handleChange}` on the `<input>` in PasswordInput
+- `onMouseEnter={handleEnter}` and `onMouseLeave={handleLeave}` on the `<button>` in SubmitButton
 
 ## Task 4: Test and Refine
 - Debugging and testing during coding
+- Ran `npm test` and checked the Console to confirm the events log correctly.
 
 ## Task 5: Document and Maintain
+### How to Run the Project
+1. Run `npm install` to install the dependencies.
+2. Run `npm run dev` to start the project.
+3. Open the link shown in the terminal (usually http://localhost:5173).
+4. Press F12 and open the Console to see the logs when you type and hover over the button.
+
+### Screenshots
+![App](./screenshots/app.png)
+![Console](./screenshots/console.png)
 
 ## Tools and Resources
 - **GitHub Repository:** [React Event Handling Vite Lab](https://github.com/learn-co-curriculum/react-event-handling-vite-lab)
